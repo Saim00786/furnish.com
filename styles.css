@@ -107,7 +107,7 @@ header{
 }
 .sec-1 .left div{
     background-color: #D4EAF5;
-    padding:0 10%;
+    padding:0 20%;
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -141,6 +141,7 @@ span{
 
 .main-text{
     font-size: 3rem;
+    font-weight: 100;
 }
 .secondary-text{
     font-size: 150%;
@@ -606,6 +607,19 @@ p{
     
 }
 @media  screen and (max-width:768px) {
+    .sec-1{
+        height: 80vh;
+    }
+    .main-text{
+        font-size: 1.2rem;
+    }
+    span.bold{
+        font-size: 2rem;
+    }
+    .btn-round{
+        padding:10px 10px;
+        font-size: 0.8em;
+    }
     .footer{
         flex-direction: column;
     }
@@ -676,12 +690,19 @@ p{
     .sec-1{
         height: 80vh;
     }
+    .sec-1 .left div{
+        padding:10% 10%;
+    }
     .main-text{
-        font-size: 1.2rem;
+        font-size: 1rem;
     }
     span.bold{
-        font-size: 2rem;
+        font-size: 1.5rem;
     }
+    p{
+        line-height: 1.3em;
+    }
+   
     .blog{
         flex-direction: column;
         margin:30% 0px;
