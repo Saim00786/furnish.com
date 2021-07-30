@@ -503,15 +503,14 @@ span{
     padding-left: 30px;
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
 
 }
 .col{
     flex-basis: 18%;
     padding:20px;
 }
-.mt-50{
-    margin-top: 50px;
-}
+
 .fsize-small{
     font-size: 1.1rem;
 }
@@ -579,7 +578,7 @@ span{
     flex-basis: 80%;
 }
 .my-mid{
-    margin:10% 0%;
+    margin:7% 0%;
 }
 p{
     line-height: 2em;
