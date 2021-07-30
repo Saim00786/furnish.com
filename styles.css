@@ -151,6 +151,7 @@ span{
 
 .sec-2 .card-container{
     justify-content: space-evenly;
+    padding: 100px 0;
 
 }
 .sec-2 .card{
@@ -498,10 +499,11 @@ span{
 }
 
 .footer{
-    padding:100px 0px;
+    padding-top:100px;
+    padding-left: 30px;
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+
 }
 .col{
     flex-basis: 18%;
