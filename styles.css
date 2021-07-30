@@ -65,7 +65,7 @@
     background-color: red;
 }
 .h-25{
-    height: 20vh;
+    height: 250px;
 }
 
 header{
@@ -140,6 +140,7 @@ span{
 }
 
 .main-text{
+    margin-top: 30%;
     font-size: 3rem;
     font-weight: 100;
 }
@@ -153,7 +154,7 @@ span{
 
 }
 .sec-2 .card{
-    flex-basis: 22%;
+    flex: 1;
     padding: 50px 20px;
     margin: 10px 5px;
     justify-content: space-between;
@@ -441,7 +442,7 @@ span{
     display: flex;
     height: 300px;
     max-width: 600px;
-    min-width: 300px;
+    min-width: 150px;
     background-color: #FAFAFA;
     margin:2%;
 }
@@ -503,7 +504,7 @@ span{
     justify-content: center;
 }
 .col{
-    flex-basis: 20%;
+    flex-basis: 18%;
     padding:20px;
 }
 .mt-50{
@@ -582,6 +583,10 @@ p{
     line-height: 2em;
 }
 
+.copyright{
+    font-size: 0.7em;
+}
+
 
 @media  screen and (max-width:1666px) {
     .sec-2 .card{
@@ -608,7 +613,7 @@ p{
 }
 @media  screen and (max-width:768px) {
     .sec-1{
-        height: 80vh;
+        height: 800px;
     }
     .main-text{
         font-size: 1.2rem;
@@ -662,7 +667,8 @@ p{
         font-size: 0.8rem;
     }
     .title{
-        font-size: 2rem;
+        font-size: 1.5rem;
+        margin:20px 0;
     }
     .grey-title{
         font-size: 0.8rem;
@@ -688,10 +694,10 @@ p{
 
 @media screen and (max-width:600px) {
     .sec-1{
-        height: 80vh;
+        height: 500px;
     }
     .sec-1 .left div{
-        padding:10% 10%;
+        padding:0 2em;
     }
     .main-text{
         font-size: 1rem;
@@ -733,13 +739,25 @@ p{
         background-position: 20%;
     }
     .sec-1{
-        height: 60vh;
+        height: 600px;
     }
 }
 
 @media screen and (max-width:360px) {
+    .sec-1 .left div p{
+        font-size: 12px;
+    }
     .secondary-text{
         font-size: 1rem;
+    }
+    .sec-1{
+        height: 400px;
+    }
+    .sec-1 .left div{
+        padding:0px 10%;
+    }
+    p{
+        font-size: 0.85em;
     }
     .hero .right h1{
         font-size: 2.5rem;
@@ -764,5 +782,13 @@ p{
     }
    
     
+}
+@media screen and (max-width:320px) {
+    
+    .sec-1{
+        height: 375px;
+    }
+    
+
 }
 
