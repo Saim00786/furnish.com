@@ -336,7 +336,7 @@ span{
     align-items: center;
     padding:50px 25px;
     max-width:600px;
-    min-width:200px
+
 }
 .new-card .circle{
     align-items: center;
@@ -531,8 +531,8 @@ span{
     color: #81C2E2;
 }
 .box-small{
-    width: 60px;
-    height: 60px;
+    width: 80px;
+    height: 80px;
 }
 .rounded{
     width: 100%;
@@ -543,6 +543,7 @@ span{
 }
 .post{
     justify-content: center;
+    flex-wrap: nowrap;
 }
 .post-left{
     flex-basis: 20%;
@@ -576,6 +577,7 @@ span{
 }
 .flex-80{
     flex-basis: 80%;
+    margin-left: -20px;
 }
 .my-mid{
     margin:7% 0%;
@@ -587,7 +589,9 @@ p{
 .copyright{
     font-size: 0.7em;
 }
-
+.footer .logo{
+    margin-bottom: 20px;
+}
 
 @media  screen and (max-width:1666px) {
     .sec-2 .card{
@@ -612,6 +616,17 @@ p{
     }
     
 }
+
+@media  screen and (max-width:1229px) {
+   .col{
+       flex-basis: 46%;
+   }
+}
+@media  screen and (max-width:1029px) {
+    .col{
+        flex-basis: 100%;
+    }
+ }
 @media  screen and (max-width:768px) {
     .sec-1{
         height: 800px;
@@ -712,7 +727,7 @@ p{
    
     .blog{
         flex-direction: column;
-        margin:30% 0px;
+        height: auto;
     }
     .blog-right{
         order:2;
@@ -733,6 +748,9 @@ p{
     .btn-circle i{
         font-size: 1.2rem;
     }
+    .post-right h1{
+        font-size:1.2em;
+    }
 }
 
 @media screen and (max-width:560px) {
@@ -741,6 +759,9 @@ p{
     }
     .sec-1{
         height: 600px;
+    }
+    .post-right .flex-container{
+        margin-left: 20px;
     }
 }
 
@@ -781,7 +802,12 @@ p{
     .sec-5{
         padding-bottom: 30%;
     }
-   
+    
+    .post-right p{
+        font-size:0.8em;
+        
+    }
+    
     
 }
 @media screen and (max-width:320px) {
@@ -789,7 +815,36 @@ p{
     .sec-1{
         height: 375px;
     }
+    .post-right .flex-container{
+        margin-left: 0;
+    }
     
-
+    .footer{
+        padding-left: 0;
+    }
+    .new-card .circle{
+        width: 35px;
+        height: 35px;
+    }
+    .new-card .circle i{
+        font-size:25px;
+    }
+    .post{
+        flex-wrap: wrap;
+    }
+    .post-right h1{
+        font-size:1em;
+        margin: 0;
+        padding-left: 0;
+    }
+    .post{
+        justify-content: flex-start;
+        margin:10px
+    }
+    .post-left{
+        margin-bottom: 10px;
+    }
+    
+    
 }
 
