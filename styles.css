@@ -575,6 +575,9 @@ span{
 .my-mid{
     margin:10% 0%;
 }
+p{
+    line-height: 2em;
+}
 
 
 @media  screen and (max-width:1666px) {
