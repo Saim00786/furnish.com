@@ -587,8 +587,6 @@ span{
         align-items: flex-start;
         justify-content:space-around;
     }
-}
-@media  screen and (max-width:1649px) {
     .dotted-line{
         display: none;
     }
