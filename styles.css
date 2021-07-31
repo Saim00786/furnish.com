@@ -15,8 +15,11 @@
 }
 .flex-container{
     display: flex;
-    flex-wrap: wrap;
+
     align-items: center;
+}
+.wrap{
+    flex-wrap: wrap;
 }
 .flex-container-column{
     display: flex;
@@ -94,9 +97,9 @@ header{
 .navbar .active{
     color:white;
 }
-.sec-1{
+.main{
     display: flex;
-    height: 100vh;
+    height: 900px;
 
 }
 .left{
@@ -105,7 +108,7 @@ header{
 .right{
     flex-basis: 50%;
 }
-.sec-1 .left div{
+.main .left div{
     background-color: #D4EAF5;
     padding:0 20%;
     height: 100%;
@@ -114,7 +117,7 @@ header{
     align-items: flex-start;
     justify-content: center;
 }
-.sec-1 .right{
+.main .right{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -127,7 +130,7 @@ header{
     border:none;
     margin:10px 5px;
 }
-.sec-1 .btn-round{
+.main .btn-round{
     color: rgb(32, 110, 161);
     background-color: white;
 }
@@ -149,12 +152,12 @@ span{
     margin: 20px 0;
 }
 
-.sec-2 .card-container{
+.hero-sec .card-container{
     justify-content: space-evenly;
     padding: 100px 0;
 
 }
-.sec-2 .card{
+.hero-sec .card{
     flex: 1;
     padding: 50px 20px;
     margin: 10px 5px;
@@ -176,7 +179,7 @@ span{
     color: #B1B1B7;
 }
 
-.sec-2 .card p{
+.hero-sec .card p{
     margin-top: 10px;
     color: #B1B1B7;
 }
@@ -231,7 +234,7 @@ span{
     font-size: 1.5rem;
 }
 
-.sec-3 .flex-container-column{
+.image-section .flex-container-column{
     align-items: center;
 }
 .image-gallery{
@@ -285,7 +288,7 @@ span{
     font-size: 2rem;
 }
 
-.sec-4 .flex-container-column{
+.customer-section .flex-container-column{
     align-items: center;
 }
 
@@ -305,10 +308,10 @@ span{
 .m-10{
     margin:10px;
 }
-.sec-3{
+.image-section{
     overflow-x: hidden;
 }
-.sec-4 .flex-container-column .flex-container .card .circle{
+.customer-section .flex-container-column .flex-container .card .circle{
     width: 50px;
     height: 50px;
     display: flex;
@@ -318,7 +321,7 @@ span{
     top:-35px;
     left: 50px;
 }
-.sec-4 .flex-container-column .flex-container .card {
+.customer-section .flex-container-column .flex-container .card {
     position: relative;
     padding:60px 30px;
     margin:30px 10px;
@@ -363,7 +366,7 @@ span{
 .text-dark-orange{
     color:#CF7732;
 }
-.sec-4{
+.customer-section{
     background-color: #F7F7F7;
     padding-bottom: 30px;
 }
@@ -397,12 +400,12 @@ span{
 }
 .dotted-line{
     position: absolute;
-    width: 75%;
+    width: 70%;
     border:1px dashed lightgray;
     z-index: 0;
-    top: 370px;
+    top: 52%;
 }
-.sec-4 .flex-container-column .flex-container-column{
+.customer-section .flex-container-column .flex-container-column{
     position: relative;
 }
 .d-inline{
@@ -474,7 +477,7 @@ span{
     justify-content: space-between;
     height: 100%;
 }
-.sec-5 .flex-container .flex-container{
+.blog-section .flex-container .flex-container{
     justify-content: space-around;
 
 }
@@ -488,10 +491,10 @@ span{
     font-size: 1.5rem;
 }
 
-.sec-5 .flex-container{
+.blog-section .flex-container{
     justify-content: center;
 }
-.sec-5{
+.blog-section{
     padding-bottom: 2%;
 }
 .bg-light-blue{
@@ -502,12 +505,11 @@ span{
     padding-top:100px;
     padding-left: 30px;
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-between;
 
 }
 .col{
-    flex-basis: 18%;
+    flex:1;
     padding:20px;
 }
 
@@ -594,7 +596,7 @@ p{
 }
 
 @media  screen and (max-width:1666px) {
-    .sec-2 .card{
+    .hero-sec .card{
         flex-basis: 42%;
         padding:20;
         margin:5px 2px;
@@ -603,9 +605,7 @@ p{
         align-items: flex-start;
         justify-content:space-around;
     }
-    .dotted-line{
-        display: none;
-    }
+    
 }
 @media screen and (max-width:1499px) {
     .recent-post{
@@ -621,14 +621,23 @@ p{
    .col{
        flex-basis: 46%;
    }
+   .footer{
+       flex-wrap: wrap;
+   }
 }
 @media  screen and (max-width:1029px) {
     .col{
         flex-basis: 100%;
     }
+    .dotted-line{
+        top:45%;
+    }
  }
 @media  screen and (max-width:768px) {
-    .sec-1{
+    .dotted-line{
+        display: none;
+    }
+    .main{
         height: 800px;
     }
     .main-text{
@@ -654,7 +663,7 @@ p{
         font-size: 2.5rem;
         font-weight: 200;
     }
-    .sec-4 .flex-container-column .flex-container{
+    .customer-section .flex-container-column .flex-container{
         flex-direction: column;
     }
     .bar-container{
@@ -663,7 +672,7 @@ p{
     .figures{
         flex-direction: column;
     }
-    .sec-2 .card-container{
+    .hero-sec .card-container{
         flex-direction: column;
         align-items:initial;
     }
@@ -709,10 +718,10 @@ p{
 }
 
 @media screen and (max-width:600px) {
-    .sec-1{
+    .main{
         height: 500px;
     }
-    .sec-1 .left div{
+    .main .left div{
         padding:0 2em;
     }
     .main-text{
@@ -742,7 +751,7 @@ p{
         margin:10px 20px
     }
 
-    .sec-5{
+    .blog-section{
         padding-bottom: 20%;
     }
     .btn-circle i{
@@ -757,7 +766,7 @@ p{
     .hero {
         background-position: 20%;
     }
-    .sec-1{
+    .main{
         height: 600px;
     }
     .post-right .flex-container{
@@ -766,16 +775,16 @@ p{
 }
 
 @media screen and (max-width:360px) {
-    .sec-1 .left div p{
+    .main .left div p{
         font-size: 12px;
     }
     .secondary-text{
         font-size: 1rem;
     }
-    .sec-1{
+    .main{
         height: 400px;
     }
-    .sec-1 .left div{
+    .main .left div{
         padding:0px 10%;
     }
     p{
@@ -799,7 +808,7 @@ p{
     .btn-circle i{
         font-size: 0.8rem;
     }
-    .sec-5{
+    .blog-section{
         padding-bottom: 30%;
     }
     
@@ -812,7 +821,7 @@ p{
 }
 @media screen and (max-width:320px) {
     
-    .sec-1{
+    .main{
         height: 375px;
     }
     .post-right .flex-container{
