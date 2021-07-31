@@ -447,7 +447,7 @@ span{
 .blog{
     display: flex;
     height: 300px;
-    max-width: 500px;
+    max-width: 600px;
     min-width: 150px;
     background-color: #FAFAFA;
     margin:2%;
@@ -618,7 +618,11 @@ p{
     }
     
 }
-
+@media  screen and (max-width:1304px) {
+    .blog{
+        max-width: 500px;
+    }
+ }
 
 @media  screen and (max-width:1229px) {
    .col{
