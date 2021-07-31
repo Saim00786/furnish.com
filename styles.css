@@ -596,6 +596,9 @@ p{
 .footer .logo{
     margin-bottom: 20px;
 }
+.post-right .flex-container{
+    margin-left: 5%;
+}
 
 @media  screen and (max-width:1666px) {
     .hero-sec .card{
