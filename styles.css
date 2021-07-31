@@ -1,6 +1,8 @@
 *{
     margin: 0;
     padding: 0;
+}
+body{
     font-size: 17px;
     font-family: "Poppins", Arial, sans-serif;
 }
@@ -445,7 +447,7 @@ span{
 .blog{
     display: flex;
     height: 300px;
-    max-width: 600px;
+    max-width: 500px;
     min-width: 150px;
     background-color: #FAFAFA;
     margin:2%;
@@ -617,6 +619,7 @@ p{
     
 }
 
+
 @media  screen and (max-width:1229px) {
    .col{
        flex-basis: 46%;
@@ -759,6 +762,9 @@ p{
     }
     .post-right h1{
         font-size:1.2em;
+    }
+    .m-fix{
+        margin:2%;
     }
 }
 
