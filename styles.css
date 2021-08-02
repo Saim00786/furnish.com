@@ -738,6 +738,16 @@ p{
     .navbar{
         display: none;
     }
+    .blog{
+        flex-direction: column;
+        height: auto;
+    }
+    .blog-right{
+        order:2;
+    }
+    .m-fix{
+        margin:2%;
+    }
 }
 
 @media screen and (max-width:600px) {
@@ -757,13 +767,7 @@ p{
         line-height: 1.3em;
     }
 
-    .blog{
-        flex-direction: column;
-        height: auto;
-    }
-    .blog-right{
-        order:2;
-    }
+
     .hero .left{
         display: none;
     }
@@ -783,9 +787,7 @@ p{
     .post-right h1{
         font-size:1.2em;
     }
-    .m-fix{
-        margin:2%;
-    }
+
 }
 
 @media screen and (max-width:560px) {
