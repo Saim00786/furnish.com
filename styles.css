@@ -872,3 +872,10 @@ p{
     
 }
 
+@media screen and (min-width:2046px) {
+    .blog{
+        max-width: 800px;
+        height: 400px;;
+    }
+    
+}
