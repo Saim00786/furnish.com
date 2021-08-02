@@ -637,7 +637,17 @@ p{
        line-height: 1.3em;
    }
 }
-
+@media  screen and (max-width:1000px){
+    .blog{
+        height: 220px;
+    }
+    .fsize-mid{
+        font-size: 1rem;
+    }
+    p{
+        font-size: 0.9rem;
+    }
+}
 @media  screen and (max-width:1029px) {
     .hero-sec .card-container{
         flex-direction: column;
