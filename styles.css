@@ -31,7 +31,7 @@ body{
 .overlay{
     position: fixed;
     display: none;
-    
+
     width: 100%;
     height: 100%;
     background-color: rgba(0,0,0,0.75);
@@ -56,7 +56,7 @@ body{
     text-align: center;
     align-items: center;
     padding:20px;
-    
+
 }
 .side-menu a{
     width: 100%;
@@ -327,7 +327,7 @@ span{
     position: relative;
     padding:60px 30px;
     margin:30px 10px;
-    
+
 }
 .new-card-container{
     width: 90vw;
@@ -379,7 +379,7 @@ span{
 .new-card-p{
     font-weight: bold;
 
-    
+
 }
 .badge{
     display: flex;
@@ -544,7 +544,7 @@ span{
     height: 100%;
     object-fit: cover;
     border-radius: 5px;
-   
+
 }
 .post{
     justify-content: center;
@@ -609,7 +609,7 @@ p{
         align-items: flex-start;
         justify-content:space-around;
     }
-    
+
 }
 @media screen and (max-width:1499px) {
     .recent-post{
@@ -618,7 +618,7 @@ p{
     .col{
         flex-basis: 30%;
     }
-    
+
 }
 @media  screen and (max-width:1304px) {
     .blog{
@@ -637,6 +637,7 @@ p{
        line-height: 1.3em;
    }
 }
+
 @media  screen and (max-width:1029px) {
     .hero-sec .card-container{
         flex-direction: column;
@@ -652,7 +653,12 @@ p{
         margin-bottom: 50px;
     }
  }
+
+
 @media  screen and (max-width:768px) {
+    .column{
+        flex-direction: column;
+    }
     .dotted-line{
         display: none;
     }
@@ -695,7 +701,7 @@ p{
         flex-direction: column;
         align-items:initial;
     }
-    
+
     .fsize-mid{
         font-size: 1rem;
     }
@@ -750,7 +756,7 @@ p{
     p{
         line-height: 1.3em;
     }
-   
+
     .blog{
         flex-direction: column;
         height: auto;
@@ -824,30 +830,30 @@ p{
     span.bold{
         font-size: 1rem;
 
-    }        
+    }
     .btn-circle i{
         font-size: 0.8rem;
     }
     .blog-section{
         padding-bottom: 30%;
     }
-    
+
     .post-right p{
         font-size:0.8em;
-        
+
     }
-    
-    
+
+
 }
 @media screen and (max-width:320px) {
-    
+
     .main{
         height: 375px;
     }
     .post-right .flex-container{
         margin-left: 0;
     }
-    
+
     .footer{
         padding-left: 0;
     }
@@ -873,8 +879,8 @@ p{
     .post-left{
         margin-bottom: 10px;
     }
-    
-    
+
+
 }
 
 @media screen and (min-width:2046px) {
@@ -882,5 +888,5 @@ p{
         max-width: 800px;
         height: 400px;;
     }
-    
+
 }
