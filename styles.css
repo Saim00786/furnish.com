@@ -529,6 +529,7 @@ span{
 
 }
 .service-list-item::before{
+    font-weight: bolder;
     content: '➝';
     position: absolute;
     left: 0;
